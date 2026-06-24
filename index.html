@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr. Vivek Kumar Pandey | Academic Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+    --primary:#0f4c81;
+    --secondary:#1e88e5;
+    --bg:#f4f7fb;
+    --card:#ffffff;
+    --text:#222;
+    --shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.dark{
+    --bg:#0f172a;
+    --card:#1e293b;
+    --text:#f1f5f9;
+    --primary:#60a5fa;
+    --secondary:#38bdf8;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:var(--bg);
+    color:var(--text);
+    transition:0.3s;
+    scroll-behavior:smooth;
+}
+
+header{
+    background:linear-gradient(135deg,var(--primary),var(--secondary));
+    color:white;
+    padding:120px 20px;
+    text-align:center;
+}
+
+header h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+header h3{
+    font-weight:400;
+}
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:var(--card);
+    box-shadow:var(--shadow);
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    list-style:none;
+}
+
+nav ul li{
+    margin:15px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:var(--text);
+    font-weight:500;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:50px 20px;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:2rem;
+    color:var(--primary);
+}
+
+.card{
+    background:var(--card);
+    padding:25px;
+    margin-bottom:25px;
+    border-radius:15px;
+    box-shadow:var(--shadow);
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+ul{
+    padding-left:20px;
+}
+
+.skill{
+    display:inline-block;
+    padding:10px 15px;
+    margin:8px;
+    border-radius:30px;
+    background:var(--secondary);
+    color:white;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:var(--primary);
+    color:white;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:12px 20px;
+    background:white;
+    color:var(--primary);
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:600;
+}
+
+.toggle{
+    position:fixed;
+    right:20px;
+    top:20px;
+    cursor:pointer;
+    background:white;
+    border:none;
+    border-radius:50%;
+    width:50px;
+    height:50px;
+    box-shadow:var(--shadow);
+    font-size:20px;
+}
+
+@media(max-width:768px){
+header h1{
+font-size:2rem;
+}
+}
+
+</style>
+</head>
+<body>
+
+<button class="toggle" onclick="toggleTheme()">🌙</button>
+
+<header>
+    <h1>Dr. Vivek Kumar Pandey</h1>
+    <h3>Assistant Professor | Mechanical Engineering</h3>
+    <p>Presidency University, Bengaluru, India</p>
+
+    <a href="#contact" class="btn">Contact Me</a>
+</header>
+
+<nav>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#research">Research</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#teaching">Teaching</a></li>
+<li><a href="#publications">Publications</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<section id="about" class="container">
+<h2 class="section-title">About Me</h2>
+
+<div class="card">
+<p>
+I am an Assistant Professor in the Department of Mechanical Engineering at Presidency University, Bengaluru. My research interests focus on advanced metallic materials, particularly High Entropy Alloys (HEAs), Refractory High Entropy Alloys (RHEAs), powder metallurgy, computational materials science, and alloy design using CALPHAD and Density Functional Theory (DFT).
+</p>
+
+<br>
+
+<p>
+I obtained my Ph.D. in Metallurgical Engineering from IIT (BHU) Varanasi. My research integrates experimental materials development with computational approaches for aerospace, automotive, and biomedical applications.
+</p>
+</div>
+</section>
+
+<section id="research" class="container">
+<h2 class="section-title">Research Interests</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>High Entropy Alloys</h3>
+<p>Design, development and characterization of advanced HEAs and RHEAs.</p>
+</div>
+
+<div class="card">
+<h3>Computational Materials Science</h3>
+<p>DFT, CALPHAD, ATAT, Phonopy and thermodynamic modeling.</p>
+</div>
+
+<div class="card">
+<h3>Powder Metallurgy</h3>
+<p>Mechanical alloying, sintering and advanced powder processing techniques.</p>
+</div>
+
+<div class="card">
+<h3>Aerospace Materials</h3>
+<p>Lightweight and oxidation-resistant alloys for extreme environments.</p>
+</div>
+
+</div>
+</section>
+
+<section id="projects" class="container">
+<h2 class="section-title">Research Projects</h2>
+
+<div class="card">
+<h3>VGST-ECRA Project (Principal Investigator)</h3>
+
+<p>
+Design and Development of Refractory High Entropy Alloys for Automotive Applications
+</p>
+
+<p><strong>Funding:</strong> ₹10 Lakhs</p>
+</div>
+
+<div class="card">
+<h3>VGST-ECRA Project (Co-Principal Investigator)</h3>
+
+<p>
+Classification of Heat Affected Zone upon Grinding of AlSi52100 Bearing Steel through Deep Learning Based Semantic Segmentation Technique
+</p>
+
+<p><strong>Funding:</strong> ₹10 Lakhs</p>
+</div>
+
+</section>
+
+<section id="teaching" class="container">
+
+<h2 class="section-title">Teaching</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Mechanics of Solids</h3>
+</div>
+
+<div class="card">
+<h3>CAD for Additive Manufacturing</h3>
+</div>
+
+<div class="card">
+<h3>Metrology and Measurements</h3>
+</div>
+
+<div class="card">
+<h3>Manufacturing Technology</h3>
+</div>
+
+<div class="card">
+<h3>Smart Materials and Adaptive Structures</h3>
+</div>
+
+<div class="card">
+<h3>Control Engineering</h3>
+</div>
+
+</div>
+
+</section>
+
+<section id="publications" class="container">
+
+<h2 class="section-title">Selected Publications</h2>
+
+<div class="card">
+<ul>
+
+<li>Add your latest SCI/SCIE journal publications here.</li>
+
+<li>Research articles on High Entropy Alloys and Computational Materials Design.</li>
+
+<li>Articles related to Powder Metallurgy and Aerospace Materials.</li>
+
+<li>Conference proceedings and book chapters.</li>
+
+</ul>
+</div>
+
+</section>
+
+<section id="skills" class="container">
+
+<h2 class="section-title">Technical Skills</h2>
+
+<div class="card">
+
+<span class="skill">Quantum ESPRESSO</span>
+
+<span class="skill">Thermo-Calc</span>
+
+<span class="skill">CALPHAD</span>
+
+<span class="skill">ATAT</span>
+
+<span class="skill">Phonopy</span>
+
+<span class="skill">MATLAB</span>
+
+<span class="skill">Python</span>
+
+<span class="skill">Powder Metallurgy</span>
+
+<span class="skill">Materials Characterization</span>
+
+<span class="skill">SEM</span>
+
+<span class="skill">XRD</span>
+
+<span class="skill">Mechanical Alloying</span>
+
+</div>
+
+</section>
+
+<section id="contact" class="container">
+
+<h2 class="section-title">Contact</h2>
+
+<div class="card">
+
+<p><strong>Name:</strong> Dr. Vivek Kumar Pandey</p>
+
+<p><strong>Position:</strong> Assistant Professor</p>
+
+<p><strong>Department:</strong> Mechanical Engineering</p>
+
+<p><strong>Institution:</strong> Presidency University, Bengaluru</p>
+
+<p><strong>Email:</strong> your-email@presidencyuniversity.in</p>
+
+<p><strong>Google Scholar:</strong> Add Link</p>
+
+<p><strong>ORCID:</strong> Add Link</p>
+
+<p><strong>ResearchGate:</strong> Add Link</p>
+
+<p><strong>LinkedIn:</strong> Add Link</p>
+
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 Dr. Vivek Kumar Pandey | Academic Portfolio</p>
+</footer>
+
+<script>
+
+function toggleTheme(){
+document.body.classList.toggle('dark');
+}
+
+</script>
+
+</body>
+</html>
